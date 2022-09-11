@@ -1,0 +1,94 @@
+/*Color Palette #4574
+brown           #583E26
+beige           #A78B71
+brightyellow    #F7C815
+orangeyellow    #EC9704
+lightbrown      #9C4A1A
+*/
+
+.quote__container {
+  color: rgb(48, 23, 3);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: repeating-radial-gradient(
+    circle,
+    #583e26 0px,
+    #f7c815 20px,
+    #ec9704 20px,
+    #583e26 60px
+  );
+}
+
+.quote__title {
+  background-color: #f7c815;
+  margin: 50px 0;
+  padding: 0;
+  color: rgb(48, 23, 3);
+}
+
+.quote__content {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  width: 50%;
+  text-align: justify;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: #583e26 4px double;
+}
+
+.btn__container {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quote__btn {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: none;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+}
+
+.quote__btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.quote__btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #9c4a1a;
+  transition: all 0.35s;
+}
+
+.quote__btn:hover {
+  color: #fff;
+}
+
+.quote__btn:hover:after {
+  width: 100%;
+}
+
+.quote__author {
+  font-size: 1.2rem;
+  font-weight: 700;
+}

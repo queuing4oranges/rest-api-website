@@ -1,0 +1,39 @@
+/*colors from bg image:
+Silk            #BBB1A9
+Masala          #3B312F
+Tobacco Brown   #6A5748
+Kabul           #5E493E
+*/
+
+/*complementary:
+lightorange #FF8A30
+orange      #FC7A17
+petrol      #009CB0
+lightblue   #17E2FC
+*/
+
+.home__container {
+  background-image: url("../images/winter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.home__title {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 40vw;
+  color: #1b1713;
+}
+
+.link__cont {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
