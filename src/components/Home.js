@@ -13,7 +13,7 @@ export default function Home() {
         <Link className="home__link" to="/name-age"><p>Check my age.</p></Link>
         <Link className="home__link" to="/quote"><p>Give me a quote.</p></Link>
         <Link className="home__link" to="/activity"><p>Find an activity.</p></Link>
-        <Link className="home__link" to="/where"><p>Name checker.</p></Link>
+        <Link className="home__link" to="/male-female"><p>Name checker.</p></Link>
         </div>
     </div>
   )
