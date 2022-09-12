@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Navbar from './Navbar';
 
 
 
@@ -51,6 +52,7 @@ export default function NameAge() {
 
   return (
     <div className="name__container" onKeyDown={handleKey} >
+      <Navbar />
       <div className="title__container">
         <h2 className="name__title">What's your name? </h2>
         <div className="input__cont">

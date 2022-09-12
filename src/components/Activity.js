@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from "react";
+import Navbar from './Navbar';
 
 export default function Activity() {
   const [activity, setActivity] = useState("");
@@ -16,6 +17,7 @@ export default function Activity() {
 
   return (
     <div className="activity__container">
+      <Navbar />
       <div className="activity__frame">
       <h1 className="activity__title">Bored? Here's an idea</h1>
       <button className="activity__btn" onClick={fetchData}>Ok. Show me!</button>

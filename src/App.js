@@ -5,13 +5,13 @@ import NameAge from './components/NameAge';
 import Activity from './components/Activity';
 import MaleFemale from './components/MaleFemale';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
+      
       <BrowserRouter>
-      {/* <Navbar /> */}
-
         <Routes>
           {/* <div className="quotes__container"><OneQuote /></div> */}
           <Route path="/" element={<Home/>}/>
