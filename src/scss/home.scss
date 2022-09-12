@@ -33,7 +33,25 @@ lightblue   #17E2FC
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.home__link {
+  width: 180px;
+  height: 180px;
+  background-color: #17e2fc;
+  text-decoration: none;
+  place-self: center;
+  border-radius: 15px;
+  border: 5px double #1b1713;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.home__link p {
+  color: #1b1713;
 }
