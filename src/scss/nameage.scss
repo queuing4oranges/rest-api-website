@@ -87,3 +87,35 @@ html {
   border: 1px solid white;
   border-radius: 5px;
 }
+
+/*mobile phone*/
+@media (max-width: 600px) {
+  .name__container {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .element__container {
+    padding: 20px;
+  }
+
+  .name__text {
+    top: 50%;
+    left: 20%;
+    padding-right: 20px;
+  }
+
+  .age__text {
+    top: 55%;
+    left: 20%;
+    text-align: start;
+    padding-right: 20px;
+  }
+
+  .count__text {
+    top: 65%;
+    left: 20%;
+    text-align: start;
+    padding-right: 20px;
+  }
+}

@@ -46,3 +46,14 @@
   align-items: center;
   padding: 20px;
 }
+
+/*Mobile*/
+
+@media (max-width: 600px) {
+  .activity__container {
+    height: 100vh;
+  }
+  .activity__title {
+    padding: 100px 0 50px;
+  }
+}

@@ -92,3 +92,15 @@ lightbrown      #9C4A1A
   font-size: 1.2rem;
   font-weight: 700;
 }
+
+/*mobile phone*/
+@media (max-width: 600px) {
+  .quote__content {
+    justify-content: center;
+  }
+  .quote__content {
+    width: 70%;
+    left: 15%;
+    font-size: 1.2rem;
+  }
+}

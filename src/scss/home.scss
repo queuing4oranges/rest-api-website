@@ -55,3 +55,22 @@ lightblue   #17E2FC
 .home__link p {
   color: #1b1713;
 }
+
+/*mobile phone*/
+@media (max-width: 600px) {
+  .home__title {
+    padding: 50px 0;
+    font-size: 2rem;
+  }
+
+  .home__link {
+    width: 130px;
+    height: 130px;
+  }
+  .link__cont {
+    display: grid;
+    grid-template-columns: 135px 150px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+}

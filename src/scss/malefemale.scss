@@ -58,3 +58,10 @@
   align-items: center;
   align-self: center;
 }
+
+/*mobile*/
+@media (max-width: 600px) {
+  .female__container {
+    height: 100vh;
+  }
+}
