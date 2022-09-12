@@ -3,7 +3,7 @@ import Home from './components/Home';
 import OneQuote from './components/OneQuote';
 import NameAge from './components/NameAge';
 import Activity from './components/Activity';
-import Where from './components/Where';
+import MaleFemale from './components/MaleFemale';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
           <Route path="/quote" element={<OneQuote/>}/>
           <Route path="/name-age" element={<NameAge/>}/>
           <Route path="/activity" element={<Activity/>}/>
-          <Route path="/where" element={<Where/>}/>
+          <Route path="/male-female" element={<MaleFemale/>}/>
 
         </Routes>
       </BrowserRouter>

@@ -1,0 +1,48 @@
+/* Color Palette #4564
+
+// $brown-color: #680003;
+// $red-color: #bc0000;
+// $orange-color: #f5704a;
+// $rose-color: #efb9ad;
+// $green-color: #828d00;
+
+*/
+
+.activity__container {
+  background-color: #828d00;
+  color: #680003;
+  height: 700px;
+}
+
+.activity__title {
+  margin: 0;
+  padding: 50px 0;
+}
+
+.activity__title::after {
+  content: "\01F9A7";
+}
+
+.activity__btn {
+  width: 150px;
+  height: 50px;
+  background-color: #bc0000;
+  color: #efb9ad;
+  border: none;
+  border-radius: 15px;
+}
+
+.activity__content {
+  margin: 50px auto;
+  width: 300px;
+  height: 200px;
+  border: 5px double #828d00;
+  background-color: #680003;
+  color: #efb9ad;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}

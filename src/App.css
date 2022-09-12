@@ -1,6 +1,7 @@
 @import "./scss/home.scss";
 @import "./scss/nameage.scss";
 @import "./scss/onequote.scss";
+@import "./scss/activity.scss";
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
 
 .App {
