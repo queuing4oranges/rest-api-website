@@ -56,7 +56,12 @@ export default function NameAge() {
       <div className="title__container">
         <h2 className="name__title">What's your name? </h2>
         <div className="input__cont">
-          <input className="input__field" id="input__field" type="text" onChange={getInputValue} />
+          <input 
+          className="input__field" 
+          id="input__field" 
+          type="search" 
+          onChange={getInputValue}
+          maxLength="15"/>
         </div>
           
           <div className="btn__cont">

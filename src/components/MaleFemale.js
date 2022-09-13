@@ -6,12 +6,18 @@ export default function MaleFemale() {
   const [data, setData] = useState("");
   const [dataLoaded, setDataLoaded] = useState(false)
   const [firstname, setFirstname] = useState("")
-
+  
   const handleChange = (event) => {
     event.preventDefault();
     const name = event.target.value;
     console.log(name)
-    setFirstname(name)
+    var letters = /^[A-Za-z]+$/;
+    if(name.match(letters)){
+      setFirstname(name)
+    }else{
+      console.log("please provide only letters")
+    }
+    
   }
 
   const handleClick = async () => {
@@ -38,7 +44,11 @@ export default function MaleFemale() {
       <Navbar />
       <h2 className="female__title">Male or female name?</h2>
       <div className="female__search">
-      <input className="female__input" type="text" onChange={handleChange} />
+      <input 
+      className="female__input" 
+      type="search" 
+      onChange={handleChange} 
+      maxLength="15"/>
       <button className="female__btn" onClick={handleClick}>Check</button>
       </div>
 
