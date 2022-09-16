@@ -10,7 +10,10 @@ export default function NameAge() {
 
     const getInputValue = (event) => {
     const name = event.target.value;
-    setAgeName(name)
+    const firstname = name[0].toUpperCase()+name.substring(1);
+    //first letter capital and substring gives from pos to end
+    setAgeName(firstname)
+    
     }  
     console.log(ageName)
   
