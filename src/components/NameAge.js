@@ -4,51 +4,39 @@ import Navbar from './Navbar';
 
 
 export default function NameAge() {
+
     const [dataLoaded, setDataLoaded] = useState(false)
     const [ageName, setAgeName] = useState('')
-    const [data, setData] = useState(null)
+    const [data, setData] = useState('')
 
     const getInputValue = (event) => {
-      event.preventDefault();
+    event.preventDefault();
     const name = event.target.value;
     const firstname = name[0].toUpperCase()+name.substring(1);
-    //first letter capital and substring gives from pos to end
     setAgeName(firstname)
     
     }  
-    console.log(ageName)
-  
-    async function fetchData() {
+      
+    const fetchData = async () => {
         const response = await fetch(`https://api.agify.io/?name=${ageName}`)
         const responseData = await response.json()
         setData(responseData) 
-        if(response.ok) {
-          setTimeout(() => {
-            setDataLoaded(true)
-          }, 500)
-          
-        }
+        setDataLoaded(true)
      }
-    
-    console.log(data)
 
-    useEffect(() =>{
-      fetchData()
-      
-    },[])
-  
+      const handleKey = (e) => {
+      if (e.key === 'Enter'){
+        fetchData()
+        setDataLoaded(true)
+    }
+  }
     const resetInput = () => {
       const el = document.getElementById("input__field");
       el.value="";
       setDataLoaded(false)
     }
 
-    const handleKey = (e) => {
-      if (e.key === 'Enter'){
-        fetchData()
-        setDataLoaded(true)
-    }
-  }
+
 
 
   return (
@@ -73,7 +61,7 @@ export default function NameAge() {
       </div>
 
       <div className="element__container">
-        {ageName &&
+        {dataLoaded &&
         
             <div>
               <p className="name__text">Hi {data.name}, </p>

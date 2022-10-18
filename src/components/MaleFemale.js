@@ -28,8 +28,6 @@ export default function MaleFemale() {
     
   }
 
-  console.log(data)
-
   const probable = (data.probability*100)
 
   const handleKey = (e) => {
