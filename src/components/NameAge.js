@@ -9,6 +9,7 @@ export default function NameAge() {
     const [data, setData] = useState(null)
 
     const getInputValue = (event) => {
+      event.preventDefault();
     const name = event.target.value;
     const firstname = name[0].toUpperCase()+name.substring(1);
     //first letter capital and substring gives from pos to end
@@ -30,9 +31,6 @@ export default function NameAge() {
      }
     
     console.log(data)
-
-    // const thename = data.name;
-    // const capname = thename.charAt(0).toUpperCase()
 
     useEffect(() =>{
       fetchData()
@@ -75,7 +73,7 @@ export default function NameAge() {
       </div>
 
       <div className="element__container">
-        {dataLoaded &&
+        {ageName &&
         
             <div>
               <p className="name__text">Hi {data.name}, </p>
